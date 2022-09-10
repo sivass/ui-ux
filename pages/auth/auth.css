@@ -1,0 +1,99 @@
+.authWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.authLogo img {
+  width: 100px;
+}
+.authTitle h2 {
+  font-weight: normal;
+}
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.authBox {
+  border: 1px solid #c2c2c2;
+  padding: 15px 25px;
+  background-color: #fff;
+}
+.authLogo,
+.authTitle {
+  display: flex;
+  justify-content: center;
+}
+.authFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recovery-link {
+  margin-top: 10px;
+}
+.authFormItem input {
+  display: block;
+  height: 40px;
+  border: 1px solid #c2c2c2;
+  text-indent: 10px;
+}
+.authFormItem input::placeholder {
+  color: #6c6a6a;
+}
+.authButtonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  margin-top: 60px;
+}
+.authFormItem {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: black;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #007fff;
+  color: #fff;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #007fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.authFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+/* For small screens */
+@media only screen and (max-width: 430px) {
+  .authWrapper {
+    height: inherit !important;
+    padding-top: 10px;
+  }
+  .authBox {
+    border: none !important;
+    padding: 0px !important;
+  }
+}
